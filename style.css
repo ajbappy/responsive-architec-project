@@ -1,0 +1,127 @@
+/* google font  */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* inicial common css  */
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #131313;
+  font-size: 3.4vw;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.4vw !important;
+}
+
+h3 {
+  font-size: 2.4vw !important;
+  font-weight: 600 !important;
+  color: #424242;
+}
+
+h4 {
+  font-size: 20px !important;
+}
+
+h5 {
+  color: #424242 !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #727272;
+}
+
+.page-wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+@media (width <= 920px) {
+  section {
+    margin-bottom: 60px;
+  }
+}
+
+@media (width <= 576px) {
+  section {
+    margin-bottom: 30px;
+  }
+}
+
+/* header and banner section start  */
+
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+  padding: 30px 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  padding-left: 55px;
+  color: #424242;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+nav > ul > li > a:hover {
+  color: #ff900e;
+}
+
+@media (width <= 576px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav > ul > li > a {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+  }
+
+  nav > ul {
+    margin-top: 30px;
+  }
+}
+
+/* header and banner section end  */
