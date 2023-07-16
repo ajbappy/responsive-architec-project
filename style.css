@@ -19,22 +19,23 @@ h4,
 h5,
 h6 {
   color: #131313;
-  font-size: 3.4vw;
+  font-size: 64px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.4vw !important;
+  font-size: 45px !important;
 }
 
 h3 {
-  font-size: 2.4vw !important;
+  font-size: 45px !important;
   font-weight: 600 !important;
   color: #424242;
 }
 
 h4 {
   font-size: 20px !important;
+  font-weight: 600 !important;
 }
 
 h5 {
@@ -50,10 +51,56 @@ p {
   color: #727272;
 }
 
+@media (width <= 1024px) {
+  h1 {
+    font-size: 45px !important;
+  }
+  h2 {
+    font-size: 35px !important;
+  }
+}
+
+@media (width <= 768px) {
+  h1 {
+    font-size: 35px !important;
+  }
+
+  h2 {
+    font-size: 25px !important;
+  }
+}
+
 .page-wrap {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 0px 20px !important;
+}
+
+.btn-primary {
+  padding: 20px 25px;
+  background-color: #ff900e;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  border: 1px solid #ff900e;
+  color: #ff900e;
+  background-color: transparent;
+}
+
+.font-500 {
+  color: #727272;
+  font-weight: 500;
+}
+
+.font-yellow {
+  color: #ff900e;
+}
+
+img {
+  width: 100%;
 }
 
 section {
@@ -75,7 +122,8 @@ section {
 /* header and banner section start  */
 
 header {
-  background-color: rgba(255, 144, 14, 0.1);
+  /* background-color: rgba(255, 144, 14, 0.1); */
+  background-color: #efffe9;
   padding: 30px 0;
 }
 .header {
@@ -105,7 +153,7 @@ nav > ul > li > a:hover {
   color: #ff900e;
 }
 
-@media (width <= 576px) {
+@media (width <= 676px) {
   .header {
     display: flex;
     justify-content: center;
@@ -124,4 +172,180 @@ nav > ul > li > a:hover {
   }
 }
 
+@media (750px <= width <= 820px) {
+  .header > h2 {
+    font-size: 35px !important;
+  }
+}
+/* banner start  */
+
+.banner {
+  text-align: center;
+}
+
+.banner > p {
+  margin: 30px 0;
+}
+.banner img {
+  width: 100%;
+}
+
+.banner > button {
+  margin-bottom: 30px;
+}
+
+/* banner end  */
+
 /* header and banner section end  */
+
+/* feature section start  */
+.feature {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.img-box {
+  width: 55%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.f-content {
+  width: 40%;
+}
+
+.f-content p {
+  margin: 30px 0;
+}
+
+@media (width <= 768px) {
+  .feature {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .img-box {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .f-content {
+    width: 100%;
+  }
+
+  .f-content > button {
+    margin-bottom: 30px;
+  }
+}
+
+@media (width <= 576px) {
+  .feature {
+    margin-top: 30px;
+  }
+
+  .img-box {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
+/* feature section end  */
+
+/* Experince section start  */
+.experince {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+
+.experince-left {
+  width: 40%;
+}
+
+.experince-left > h2 {
+  border-left: 3px solid #ff900e;
+  padding-left: 20px;
+}
+
+.experince-left > p {
+  margin: 30px 0;
+}
+
+.experince-box {
+  margin: 10px 0;
+  padding: 20px;
+  box-shadow: 0 0 20px #f8f8f8;
+}
+.experince-box > p {
+  margin: 10px 0;
+}
+
+.experince-right {
+  width: 50%;
+  position: relative;
+}
+.card {
+  position: absolute;
+  left: -100px;
+  bottom: -65px;
+  text-align: center;
+  background-color: #ff900e;
+  border-radius: 10px;
+  padding: 40px;
+  width: 300px;
+}
+.card > h1 {
+  font-size: 65px;
+  color: #fff;
+  line-height: 40px;
+}
+.text-400 {
+  color: #fff;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media (width <= 1024px) {
+  .card {
+    left: -50px;
+    bottom: -65px;
+    padding: 20px;
+    width: 250px;
+  }
+}
+
+@media (width <= 768px) {
+  .experince {
+    flex-direction: column;
+    gap: 10%;
+  }
+
+  .experince-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .experince-left h2 {
+    text-align: center;
+    border: none;
+  }
+
+  .experince-right {
+    width: 100%;
+    text-align: center;
+  }
+  .card {
+    position: static;
+    width: 200px;
+
+    margin: 0 auto;
+    /* margin-top: 30px; */
+  }
+}
+
+/* Experince section end  */
