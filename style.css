@@ -39,9 +39,9 @@ h4 {
 }
 
 h5 {
-  color: #424242 !important;
+  color: #727272 !important;
   font-size: 20px !important;
-  font-weight: 400 !important;
+  font-weight: 600 !important;
 }
 
 p {
@@ -349,3 +349,70 @@ nav > ul > li > a:hover {
 }
 
 /* Experince section end  */
+
+/* some facts section start  */
+.some-fact {
+}
+
+.some-fact > p {
+  margin: 30px 0 100px 0;
+}
+
+.fact-boxs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.fact-box {
+  width: 240px;
+  text-align: center;
+  border: 1px solid #ff900e;
+  border-radius: 10px;
+  padding: 40px 20px;
+}
+
+.fact-box > img {
+  width: 50%;
+}
+
+/* some facts section end  */
+
+/* sponsore section staret */
+.sponsore {
+  text-align: center;
+}
+
+.sponsore > P {
+  margin: 30px 0 50px 0;
+}
+
+.sponsore-icon {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sponsore-icon > div {
+  width: 170px;
+  /* text-align: center; */
+}
+/* sponsore section end */
+footer {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.footer {
+  padding: 40px 0 !important;
+  background-color: #efffe9;
+}
+
+@media (width <= 768px) {
+  footer {
+    margin-bottom: 50px;
+  }
+}
